@@ -106,11 +106,13 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <Compile Include="AppDelegate.fs" />
-    <ProjectReference Include="fsharp-forms-netstandard">
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\fsharpformsnetstandard\fsharp-forms-netstandard.fsproj">
       <Project>{48AF7B7A-169F-43B2-92FB-4C78B45F2364}</Project>
       <Name>fsharp-forms-netstandard</Name>
     </ProjectReference>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.FSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
